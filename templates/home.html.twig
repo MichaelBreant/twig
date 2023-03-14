@@ -1,9 +1,26 @@
 {% extends 'base.html.twig' %}
 
+
 {% block title %}
-    symRecipe - Accueil
+    Accueil
 {% endblock %}
 
+
+ 
 {% block body %}
 <h1>Bonjour</h1>
+Hello {{ name }}
+<p id="man">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos inventore a vitae
+ itaque ut praesentium cum deleniti blanditiis totam esse, impedit sed eos iusto molestias, beatae quibusdam ad quidem dolorum.</p>
 {% endblock %}
+{% block stylesheets %}
+        
+<link rel="stylesheet" href="{{asset('css/style.css')}}">
+       {% endblock %}
+
+        {% block javascripts %}
+        
+<script src="{{ asset('js/script.js') }}"></script>
+       {% endblock %}
+
+
